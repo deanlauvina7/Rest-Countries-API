@@ -72,6 +72,7 @@ body.dark .btn-toggle .far {
   padding: 20px;
   font-size: 14px;
   position: relative;
+  cursor: pointer;
 }
 
 .dropdown .fa-chevron-down {
@@ -97,7 +98,7 @@ body.dark .btn-toggle .far {
 }
 
 /* country card styling */
-.country {
+.card {
   max-width: 300px;
   background-color: white;
   box-shadow:
@@ -110,18 +111,18 @@ body.dark .btn-toggle .far {
   margin: 20px;
 }
 
-.country-body h2 {
+.card-body h2 {
   margin: 2px 0;
 }
 
-.country-body {
+.card-body {
   padding: 30px;
 }
 
-.country-body p {
+.card-body p {
   padding: 5px 0;
 }
 
-.container .countries {
+.card .countries {
   justify-content: center;
 }
