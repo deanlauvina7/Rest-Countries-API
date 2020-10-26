@@ -13,6 +13,8 @@ body {
 
 header {
   background: hsl(0, 0%, 100%);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.12);
 }
 
 img {
@@ -22,6 +24,7 @@ img {
 .container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1440px;
   padding: 30px;
@@ -31,6 +34,7 @@ img {
 .btn-toggle {
   border: none;
   font-size: 16px;
+  background: none;
 }
 
 .btn-toggle .fas {
@@ -70,6 +74,10 @@ body.dark .btn-toggle .far {
   position: relative;
 }
 
+.dropdown .fa-chevron-down {
+  margin-left: 10px;
+}
+
 .dropdown ul {
   border-radius: 4px;
   background-color: white;
@@ -77,9 +85,43 @@ body.dark .btn-toggle .far {
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.06),
     0 1px 2px rgba(0, 0, 0, 0.12);
-  padding: 20px;
+  display: none;
   width: 100%;
   top: 63px;
   left: 0;
   list-style-type: none;
+}
+
+.dropdown.open ul {
+  display: block;
+}
+
+/* country card styling */
+.country {
+  max-width: 300px;
+  background-color: white;
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 300px;
+  margin: 20px;
+}
+
+.country-body h2 {
+  margin: 2px 0;
+}
+
+.country-body {
+  padding: 30px;
+}
+
+.country-body p {
+  padding: 5px 0;
+}
+
+.container .countries {
+  justify-content: center;
 }
