@@ -40,6 +40,7 @@ img {
   justify-content: space-between;
   max-width: 1440px;
   padding: 30px;
+  position: relative;
 }
 
 /* dark mode button toggle */
@@ -105,7 +106,7 @@ body.dark .btn-toggle .far {
 
 .dropdown ul {
   border-radius: 4px;
-  background-color: white;
+  background-color: var(--background-el);
   position: absolute;
   box-shadow:
     0 1px 3px rgba(0, 0, 0, 0.06),
@@ -115,6 +116,7 @@ body.dark .btn-toggle .far {
   top: 68px;
   left: 0;
   list-style-type: none;
+  z-index: 100;
 }
 
 .dropdown.open ul {
@@ -153,4 +155,42 @@ body.dark .btn-toggle .far {
 
 .card .countries {
   justify-content: center;
+}
+
+/* modal styling */
+.modal {
+  background-color: var(--body);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.modal .container {
+  box-shadow:
+    0 1px 3px rgba(0, 0, 0, 0.06),
+    0 1px 2px rgba(0, 0, 0, 0.12);
+  background-color: var(--background-el);
+}
+
+.modal img {
+  max-width: 300px;
+}
+
+.modal-body {
+  padding: 30px;
+}
+
+.btn-close {
+  border: none;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  cursor: pointer;
 }
