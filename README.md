@@ -11,7 +11,7 @@ When someone clicks on a country, a modal will pop up with additional informatio
 This project also has the ability to toggle between light and dark modes.
 
 ## Tools I used 
-HTMl, CSS, Javascript, API
+HTML, CSS, Javascript, API
 
 ## Giving feedback
 
