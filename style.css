@@ -23,7 +23,6 @@ img {
 
 .container {
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   justify-content: space-between;
   max-width: 1440px;
