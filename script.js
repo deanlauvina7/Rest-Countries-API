@@ -52,7 +52,7 @@ function showCountryDetails(country) {
   modalImg.alt = country.name;
 
   modalBody.innerHTML = `  
-  <h2 class="country-name">${country.name}</h2>
+  <h2>${country.name}</h2>
     <p><strong>Native Name: </strong>${country.nativeName}</p>
     <p><strong>Population: </strong>${country.population}</p>
     <p class="country-region"><strong>Region: </strong>${country.region}</p>

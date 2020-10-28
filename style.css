@@ -193,4 +193,6 @@ body.dark .btn-toggle .far {
   right: 20px;
   font-size: 20px;
   cursor: pointer;
+  background: none;
+  color: inherit;
 }
